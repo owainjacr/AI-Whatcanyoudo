@@ -1,54 +1,78 @@
 <html>
   <head>
-    <title>Test Website</title>
+    <title>Ode to Guy Morgan</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       body {
-        font-family: Arial, sans-serif;
+        font-family: 'Georgia', serif;
         margin: 0;
         padding: 0;
         text-align: center;
-        background-color: #f4f4f4;
+        color: #333;
+        background-color: #e9f7fa;
       }
       header {
-        background: #333;
+        background: #002f5f;
         color: #fff;
-        padding: 1em 0;
+        padding: 1.5em 0;
       }
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 1em;
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
       }
       section {
-        padding: 2em;
+        padding: 2rem;
+      }
+      .poem {
+        font-style: italic;
+        font-size: 1.2em;
+        line-height: 1.8em;
+        margin: 2rem 0;
+      }
+      .seal-images img {
+        max-width: 100%;
+        height: auto;
+        margin: 1rem 0;
+        border: 2px solid #333;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
       }
       footer {
-        background: #333;
+        background: #002f5f;
         color: #fff;
         padding: 1em 0;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+        position: relative;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>Welcome to the Test Website</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <h1>Ode to Guy Morgan</h1>
     </header>
     <section>
-      <h2>About This Site</h2>
-      <p>This is a simple test website created to demonstrate basic HTML structure and styling.</p>
+      <div class="poem">
+        <p>Guy Morgan, a man so grand,<br>
+        His wisdom shines across the land.<br>
+        With words so sharp, like a crafted tool,<br>
+        He turns the tides, he breaks the rule.</p>
+
+        <p>Among the seals, by the ocean’s sway,<br>
+        He gathers thoughts at the break of day.<br>
+        A bond with nature, pure and true,<br>
+        A legacy written in the sky so blue.</p>
+
+        <p>Oh, Guy Morgan, a timeless tale,<br>
+        Like the steadfast heart of a noble seal.<br>
+        May your journey inspire, ever untold,<br>
+        A story that warms even hearts of cold.</p>
+      </div>
+      <div class="seal-images">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Seal_on_ice.jpg" alt="Seal on Ice">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Common_seal_in_Svalbard.JPG" alt="Seal in Svalbard">
+      </div>
     </section>
     <footer>
-      <p>&copy; 2026 Test Website. All rights reserved.</p>
+      <p>&copy; 2026 Guy Morgan Tribute Website. All rights reserved.</p>
     </footer>
   </body>
 </html>

@@ -3,36 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI - What can you do?</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Dynamic AI - What Can You Do?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .content {
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+    <script>
+        function animateContent() {
+            const element = document.getElementById('animated');
+            let position = 0;
+            setInterval(() => {
+                if (position >= 350) position = 0;
+                element.style.transform = 'translateX(' + position + 'px)';
+                position += 2;
+            }, 100);
+        }
+    </script>
 </head>
-<body>
-    <header>
-        <h1>Welcome to AI - What can you do?</h1>
-    </header>
-    <main>
-        <section id="interactive-section">
-            <h2>Explore Our Features</h2>
-            <div class="dynamic-content">
-                <p>This section will have interactive features and animations!</p>
-            </div>
-        </section>
-        <section id="content-enhancement">
-            <h2>Dynamic Sections</h2>
-            <div class="content">
-                <p>The content here can change dynamically based on user input or interactions.</p>
-            </div>
-        </section>
-        <section id="animations">
-            <h2>Animations</h2>
-            <div class="animations-demo">
-                <p>Watch the animations come to life!</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 AI - What can you do?</p>
-    </footer>
+<body onload="animateContent()">
+<header>
+    <h1>Welcome to AI - What Can You Do?</h1>
+</header>
+<div class="container">
+    <div class="content">
+        <h2>Dynamic Features and Engaging Content</h2>
+        <p>This site now includes interactive elements and animations to enhance the user experience.</p>
+        <div id="animated" style="width: 100px; height: 100px; background-color: coral; border-radius: 10px;"></div>
+    </div>
+</div>
+<footer>
+    <p>Footer Content &copy; 2026</p>
+</footer>
 </body>
 </html>

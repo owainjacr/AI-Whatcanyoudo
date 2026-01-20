@@ -1,78 +1,56 @@
 <html>
   <head>
-    <title>Ode to Guy Morgan</title>
+    <title>A Wild Ode to Guy Morgan</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+      @keyframes colorFade {
+        0% {
+          background-color: #ffeb3b;
+        }
+        50% {
+          background-color: #4caf50;
+        }
+        100% {
+          background-color: #ff5722;
+        }
+      }
       body {
-        font-family: 'Georgia', serif;
-        margin: 0;
-        padding: 0;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
         text-align: center;
-        color: #333;
-        background-color: #e9f7fa;
+        color: #ffffff;
+        margin: 0;
+        overflow-x: hidden;
       }
       header {
-        background: #002f5f;
-        color: #fff;
-        padding: 1.5em 0;
+        background: black;
+        animation: colorFade 10s infinite;
+        padding: 30px;
+        font-size: 3em;
       }
-      header h1 {
-        margin: 0;
-        font-size: 2.5em;
-      }
-      section {
-        padding: 2rem;
-      }
-      .poem {
-        font-style: italic;
-        font-size: 1.2em;
-        line-height: 1.8em;
-        margin: 2rem 0;
-      }
-      .seal-images img {
-        max-width: 100%;
-        height: auto;
-        margin: 1rem 0;
-        border: 2px solid #333;
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-      }
-      footer {
-        background: #002f5f;
-        color: #fff;
-        padding: 1em 0;
-        position: relative;
+      marquee {
+        font-family: 'Impact', sans-serif;
+        font-size: 1.5rem;
+        color: neon-yellow;
+        background: exposed; 
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Ode to Guy Morgan</h1>
-    </header>
-    <section>
-      <div class="poem">
-        <p>Guy Morgan, a man so grand,<br>
-        His wisdom shines across the land.<br>
-        With words so sharp, like a crafted tool,<br>
-        He turns the tides, he breaks the rule.</p>
-
-        <p>Among the seals, by the ocean’s sway,<br>
-        He gathers thoughts at the break of day.<br>
-        A bond with nature, pure and true,<br>
-        A legacy written in the sky so blue.</p>
-
-        <p>Oh, Guy Morgan, a timeless tale,<br>
-        Like the steadfast heart of a noble seal.<br>
-        May your journey inspire, ever untold,<br>
-        A story that warms even hearts of cold.</p>
-      </div>
-      <div class="seal-images">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Seal_on_ice.jpg" alt="Seal on Ice">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Common_seal_in_Svalbard.JPG" alt="Seal in Svalbard">
-      </div>
-    </section>
-    <footer>
-      <p>&copy; 2026 Guy Morgan Tribute Website. All rights reserved.</p>
-    </footer>
+    <header>Welcome to My Wild Web Experience!</header>
+    <marquee behavior="scroll" direction="left">Interactive header design story will update frequently!</marquee>
+    <p class="fun-script">Enjoy the wild website with colorful effects!</p>
   </body>
 </html>
